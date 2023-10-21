@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+    <ImageView
+        android:id="@+id/leftTopCorner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/corner"
+        android:alpha="0.6"/>
+
+    <TextView
+        android:id="@+id/latLong"
+        android:text="latitute \nlongitute"
+        android:textColor="#ffffff"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <ImageView
+        android:id="@+id/rightBottomCorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/rightbottomrect"
+        android:alpha="0.6"/>
+
+    <TextView
+        android:id="@+id/speedText"
+        android:text="0 km/h"
+        android:textColor="#ffffff"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="20dp"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClickMenu"
+        android:layout_gravity="start|bottom"
+        android:background="@drawable/but1"
+        android:alpha="0.6"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="buttonAnimateCamera"
+        android:layout_gravity="start|bottom"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/but2"
+        android:alpha="0.6"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start|bottom"
+        android:alpha="0.6"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/but3"/>
+
+</FrameLayout>

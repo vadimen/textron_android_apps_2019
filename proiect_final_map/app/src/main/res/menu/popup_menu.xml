@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andoidsrc.popupmenu.MainActivity" >
+
+    <item
+        android:id="@+id/setTrail"
+        android:showAsAction="ifRoom|withText"
+        android:title="Trail (off)"
+        android:visible="true"/>
+    <item
+        android:id="@+id/setSimulation"
+        android:showAsAction="ifRoom|withText"
+        android:title="Simulation (off)"
+        android:visible="true"/>
+    <item
+        android:id="@+id/viteza_maxima"
+        android:showAsAction="ifRoom|withText"
+        android:title="Viteza Maxima"
+        android:visible="true"/>
+    <item
+        android:id="@+id/prefs"
+        android:showAsAction="ifRoom|withText"
+        android:title="Preferinte"
+        android:visible="true"/>
+</menu>

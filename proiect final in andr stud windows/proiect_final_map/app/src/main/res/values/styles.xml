@@ -1,0 +1,27 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:popupMenuStyle">@style/AndroidSRC.PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/AndroidSRC.TextAppearance</item>
+    </style>
+
+    <style name="AndroidSRC.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">#21B6A8</item>
+    </style>
+
+    <style name="AndroidSRC.TextAppearance" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
